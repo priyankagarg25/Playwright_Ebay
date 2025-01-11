@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="API_TEST_SUITE">
+	<listeners>
+		<listener class-name="ui.listeners.ExtentReportListener" />
+	</listeners>
+	<test thread-count="1" name="ebay Tests using playwright">
+		<classes>
+			<class name="tests.EbayTest">
+				<parameter name="browser" value="chromium" />
+			</class>
+		</classes>
+	</test>
+</suite> 
+
